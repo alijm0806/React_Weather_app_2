@@ -1,5 +1,5 @@
 import coldBg from './assets/cold.jpg'
-
+import Descriptions from './components/Descriptions'
 function App() {
   return (
     <div className="app" style={{ backgroundImage: `url(${coldBg})` }}>
@@ -19,6 +19,8 @@ function App() {
               <h1>34 °C</h1>
             </div>
           </div>
+
+          <Descriptions />
 
         </div>
       </div>

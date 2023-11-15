@@ -1,6 +1,17 @@
+import { useEffect } from 'react';
 import coldBg from './assets/cold.jpg'
 import Descriptions from './components/Descriptions'
+import { getFormattedWeatherData } from './assets/WeatherService';
 function App() {
+
+  useEffect(() => {
+    const fetchWeatherData = async () => {
+      const data = await getFormattedWeatherData('paris');
+      console.log(data)
+    };
+    fetchWeatherData();
+  }, [])
+
   return (
     <div className="app" style={{ backgroundImage: `url(${coldBg})` }}>
       <div className="overlay">

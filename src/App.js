@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import hotBg from './assets/hot.jpg'
 import coldBg from './assets/cold.jpg'

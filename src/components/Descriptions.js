@@ -1,5 +1,5 @@
 import React from "react";
-import "./descriptions.css";
+import "../components/descriptions.css";
 
 import { FaArrowUp, FaArrowDown, FaWind } from "react-icons/fa";
 import { BiHappy } from "react-icons/bi";
